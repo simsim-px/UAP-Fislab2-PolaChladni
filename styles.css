@@ -206,13 +206,11 @@ body {
     font-family:"Times New Roman", serif;
 }
 
-.table-wrapper{
-    display:flex;
-    justify-content:center;
-    gap:30px;
-    width:100%;
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
+.table-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start !important;; 
+    gap: 20px;
 }
 
 .scientific-table{
