@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presentasi Fisika ITS</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+    <script>
+        window.MathJax = {
+            tex: {
+                inlineMath: [['\\(', '\\)']],
+                displayMath: [['$$','$$']]
+            },
+            svg: { fontCache: 'global' }
+        };
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+</head>
+<body>
+
+    <div class="presentation-container">
+
+        <div class="slide active" id="slide1">
+            <div class="header">
+                <img src="Logo Header.png" alt="Logo ITS" class="logo-header">
+            </div>
+            
+            <div class="content">
+                <h1 style="line-height: 1.4;">Pola Chladni: Tarian Pasir Gelombang Berdiri</h1>
+                <h2>KELOMPOK 2</h2>
+                <p>Departemen Fisika<br>Institut Teknologi Sepuluh Nopember</p>
+            </div>
+
+            <div class="footer">
+                <img src="Footer.png" alt="Footer Media Sosial">
+            </div>
+        </div>
+
+    <div class="slide animate-fade" id="slide2" style="--graha-opacity: 0.25">
+            <div class="header">
+                <img src="Logo Header.png" alt="Logo ITS" class="logo-header">
+            </div>
+            
+            <div class="content">
+                <div class="daftar-isi-title">Daftar Isi</div>
+                
+                <div class="grid-daftar-isi">
+                    <div class="bab-box">
+                        <h3>BAB I PENDAHULUAN</h3>
+                        <p>Latar belakang, Rumusan masalah, Tujuan percobaan, dan Batasan masalah</p>
+                    </div>
+                    
+                    <div class="bab-box">
+                        <h3>BAB II TINJAUAN PUSTAKA</h3>
+                        <p>Dasar Teori</p>
+                    </div>
+                    
+                    <div class="bab-box">
+                        <h3>BAB III METODOLOGI</h3>
+                        <p>Alat dan Bahan, Skema Alat, serta Diagram Alir</p>
+                    </div>
+                    
+                    <div class="bab-box">
+                        <h3>BAB IV HASIL DAN DISKUSI</h3>
+                        <p>Analisis data, Hasil Perhitungan, Grafik, dan Pembahasan</p>
+                    </div>
+                    
+                    <div class="bab-box">
+                        <h3>BAB V KESIMPULAN</h3>
+                        <p>Kesimpulan dan Saran</p>
+                    </div>
+                    <div class="bab-box">
+                        <h3>Daftar Pustaka</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer">
+                <img src="Footer.png" alt="Footer Media Sosial">
+            </div>
+        </div>
+
+        <div class="slide animate-slide" id="slide3" style="--graha-opacity: 0.12">
+            <div class="header">
+                <img src="Logo Header.png" alt="Logo ITS" class="logo-header">
+            </div>
+            <div class="content">
+                <h1>BAB I</h1>
+                <h2>PENDAHULUAN</h2>
+            </div>
+            <div class="footer">
+                <img src="Footer.png" alt="Footer Media Sosial">
+            </div>
+        </div>
+
+        <div class="slide animate-fade" id="slide3a" style="--graha-opacity: 0.14">
+            <div class="header">
+                <img src="Logo Header.png" alt="Logo ITS" class="logo-header">
+            </div>
+            <div class="content">
+                <h2>Latar Belakang</h2>
+                <p style="text-align: justify;">Dalam kehidupan sehari-hari, fenomena muatan listrik dapat teramati mulai dari rambut yang berdiri akibat penggaris plastik hingga cara kerja printer dan mesin fotokopi, yang semuanya membuktikan bahwa muatan listrik memiliki peran fundamental dalam teknologi modern. 
+                    Melalui rekonstruksi Eksperimen Tetes Minyak Millikan dengan Koreksi Cunningham, praktikum ini bertujuan membuktikan sifat kuantisasi muatan listrik sekaligus menentukan nilai muatan elementer secara eksperimental.</p>
+            </div>
+            <div class="footer">
+                <img src="Footer.png" alt="Footer Media Sosial">
+            </div>
+        </div>
+
+        <div class="slide animate-slide" id="slide3b" style="--graha-opacity: 0.16">
+            <div class="header">
+                <img src="Logo Header.png" alt="Logo ITS" class="logo-header">
+            </div>
+            <div class="content">
+                <h2>Rumusan Masalah</h2>
+                <ol>
+                    <li>Bagaimana konsep kuantisasi muatan elektron pada tetesan minyak Milikan?</li>
+                    <li>Bagaimana rekonstruksi eksperimen tetesan minyak Milikan dilakukan?</li>
+                    <li>Bagaimana cara menghitung muatan elementer pada tetesan minyak Milikan melalui koreksi Cunningham?</li>
+                </ol>
+            </div>
+            <div class="footer">
+                <img src="Footer.png" alt="Footer Media Sosial">
+            </div>
+        </div>
+
+        <div class="slide animate-zoom" id="slide3c" style="--graha-opacity: 0.12">
+            <div class="header">
+                <img src="Logo Header.png" alt="Logo ITS" class="logo-header">
+            </div>
+            <div class="content">
+                <h2>Tujuan Percobaan</h2>
+                <ol>
+                    <li>Memahami prinsip gelombang berdiri dan resonansi pada plat bundar tipis</li>
+                    <li>Mengamati dan mendokumentasikan pembentukan pola Chladni pada berbagai frekuensi getaran</li>
+                    <li>Menganalisis hubungan antara frekuensi getaran dengan kompleksitas pola sampul yang terbentuk</li>
+                    <li>Mengidentifikasi mode getar (m, n) berdasarkan pola yang terbentuk pada plat bundar</li>
+                    <li>Menghitung cepat rambat gelombang pada plat menggunakan persamaan v = λf</li>
+                </ol>
+            </div>
+            <div class="footer">
+                <img src="Footer.png" alt="Footer Media Sosial">
+            </div>
+        </div> 
+        
+        <div class="slide animate-up" id="slide3d" style="--graha-opacity: 0.10">
+            <div class="header">
+                <img src="Logo Header.png" alt="Logo ITS" class="logo-header">
+            </div>
+            <div class="content">
+                <h2>Batasan Masalah</h2>
+                <ul>
+                    <li>Percobaan hanya dilakukan pada rentang suhu dan tekanan laboratorium standar.</li>
+                    <li>Variabel lingkungan selain yang diukur dipertahankan konstan sejauh memungkinkan.</li>
+                    <li>Analisis difokuskan pada hubungan antara A dan B; variabel lain tidak dimodelkan.</li>
+                </ul>
+            </div>
+            <div class="footer">
+                <img src="Footer.png" alt="Footer Media Sosial">
+            </div>
+        </div>
+
+        <div class="slide animate-zoom" id="slide4" style="--graha-opacity: 0.2">
+            <div class="header">
+                <img src="Logo Header.png" alt="Logo ITS" class="logo-header">
+            </div>
+            <div class="content">
+                <h1>BAB II</h1>
+                <h2>TINJAUAN PUSTAKA</h2>
+            </div>
+            <div class="footer">
+                <img src="Footer.png" alt="Footer Media Sosial">
+            </div>
+        </div>
+
+        <div class="slide animate-slide" id="slide5a" style="--graha-opacity: 0.18">
+            <div class="header">
+                <img src="Logo Header.png" alt="Logo ITS" class="logo-header">
+            </div>
+            <div class="content">
+                <h2>Dasar Teori</h2>
+                <div class="grid-daftar-pustaka">
+                    <div class="bab-box">
+                        <h3>Getaran</h3>
+                        <p>Gaya apung adalah gaya ke atas yang bekerja pada benda yang dicelupkan sebagian atau seluruhnya ke dalam fluida (zat cair atau gas).</p>
+                    </div>
+                    
+                    <div class="bab-box">
+                        <h3>Gelombang Berdiri</h3>
+                        <p>Gaya gravitasi adalah gaya tarik-menarik yang terjadi antara dua benda yang memiliki massa.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer"><img src="Footer.png" alt="Footer Media Sosial"></div>
+        </div>
+
+        <div class="slide animate-slide" id="slide5a" style="--graha-opacity: 0.18">
+            <div class="header">
+                <img src="Logo Header.png" alt="Logo ITS" class="logo-header">
+            </div>
+            <div class="content">
+                
+                <div class="grid-daftar-pustaka">
+                    <div class="bab-box">
+                        <h3>Resonansi</h3>
+                        <p>Gaya apung adalah gaya ke atas yang bekerja pada benda yang dicelupkan sebagian atau seluruhnya ke dalam fluida (zat cair atau gas).</p>
+                    </div>
+                    
+                    <div class="bab-box">
+                        <h3>Pola Chladni</h3>
+                        <p>Gaya gravitasi adalah gaya tarik-menarik yang terjadi antara dua benda yang memiliki massa.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer"><img src="Footer.png" alt="Footer Media Sosial"></div>
+        </div>
+
+        <div class="slide animate-slide" id="slide5a" style="--graha-opacity: 0.18">
+            <div class="header">
+                <img src="Logo Header.png" alt="Logo ITS" class="logo-header">
+            </div>
+            <div class="content">
+                
+                <div class="grid-daftar-pustaka" style="display:block">
+                    <div class="bab-box" style="text-align: center;">
+                        <h3>Simpul dan Perut</h3>
+                        <p>Gaya apung adalah gaya ke atas yang bekerja pada benda yang dicelupkan sebagian atau seluruhnya ke dalam fluida (zat cair atau gas).</p>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="footer"><img src="Footer.png" alt="Footer Media Sosial"></div>
+        </div>
+
+        <div class="slide animate-up" id="slide5" style="--graha-opacity: 0.18">
+            <div class="header">
+                <img src="Logo Header.png" alt="Logo ITS" class="logo-header">
+            </div>
+            <div class="content">
+                <h1>BAB III</h1>
+                <h2>METODOLOGI</h2>
+                <!--<p>Alat dan bahan, langkah kerja, serta teknik pengukuran yang digunakan.</p>-->
+            </div>
+            <div class="footer">
+                <img src="Footer.png" alt="Footer Media Sosial">
+            </div>
+        </div>
+
+        <div class="slide animate-slide" id="slide5a" style="--graha-opacity: 0.18">
+            <div class="header">
+                <img src="Logo Header.png" alt="Logo ITS" class="logo-header">
+            </div>
+            <div class="content">
+                <h2>Skema Alat</h2>
+                <p style="text-align:center;"><img src="image/skema alat.jpeg" alt="Skema Alat" style="max-width:50%;height:auto;border:2px solid rgba(0,0,0,0.06);"></p>
+            </div>
+            <div class="footer"><img src="Footer.png" alt="Footer Media Sosial"></div>
+        </div>
+
+        <div class="slide animate-zoom" id="slide5b" style="--graha-opacity: 0.16">
+            <div class="header"><img src="Logo Header.png" alt="Logo ITS" class="logo-header"></div>
+            <div class="content">
+                <h2>Diagram Alir</h2>
+                <p><img src="image/diagram alir.jpeg" alt="Diagram Alir" style="max-width:80%;height:auto;border:2px solid rgba(0,0,0,0.06);"></p>
+            </div>
+            <div class="footer"><img src="Footer.png" alt="Footer Media Sosial"></div>
+        </div>
+
+        <div class="slide animate-rotate" id="slide6" style="--graha-opacity: 0.08">
+            <div class="header">
+                <img src="Logo Header.png" alt="Logo ITS" class="logo-header">
+            </div>
+            <div class="content">
+                <h1>BAB IV</h1>
+                <h2>HASIL DAN DISKUSI</h2>
+                <!--<p>Hasil pengukuran, analisis data, dan pembahasan temuan.</p>-->
+            </div>
+            <div class="footer">
+                <img src="Footer.png" alt="Footer Media Sosial">
+            </div>
+        </div>
+
+        <!-- Slide 6a: Analisis Data -->
+        <div class="slide animate-fade" id="slide6a" style="--graha-opacity: 0.12">
+            <div class="header">
+                <img src="Logo Header.png" alt="Logo ITS" class="logo-header">
+            </div>
+            <div class="content">
+                <h2>Analisis Data</h2>
+
+                <div style="display: flex; align-items: flex-start; gap: 32px;">
+                    <div style="flex: 1;">
+                        <div class="table-title" style="font-family: 'Times New Roman', serif; font-size: 14px;">
+                            <div>Tabel 1.</div>
+                            <div>Data Pengukuran Percobaan Tetesan Minyak Milikan</div>
+                        </div>
+                        <table class="scientific-table" style="font-size: 14px; width: 90%;">
+                            <thead>
+                                <tr>
+                                    <th rowspan="2">No</th>
+                                    <th rowspan="2">Jarak<br><i>d</i><br>(mm)</th>
+                                    <th colspan="1">Gerak Jatuh</th>
+                                    <th colspan="2">Gerak Naik</th>
+                                    <th colspan="1">Melayang</th>
+                                </tr>
+                                <tr>
+                                    <th><i>t<sub>down</sub></i> (s)</th>
+                                    <th><i>U<sub>r</sub></i> (V)</th>
+                                    <th><i>t<sub>up</sub></i> (s)</th>
+                                    <th><i>U<sub>s</sub></i> (V)</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr><td>1</td><td>0,001</td><td>6,379</td><td>589</td><td>10,06</td><td>262</td></tr>
+                                <tr><td>2</td><td>0,001</td><td>11,73</td><td>589</td><td>9,06</td><td>357</td></tr>
+                                <tr><td>3</td><td>0,001</td><td>5</td><td>587</td><td>6,686</td><td>218</td></tr>
+                                <tr><td>4</td><td>0,001</td><td>7,536</td><td>585</td><td>7,984</td><td>313</td></tr>
+                                <tr><td>5</td><td>0,001</td><td>10,675</td><td>588</td><td>10,647</td><td>308</td></tr>
+                                <tr><td>6</td><td>0,001</td><td>11,44</td><td>586</td><td>8,288</td><td>277</td></tr>
+                                <tr><td>7</td><td>0,001</td><td>10,474</td><td>584</td><td>12,527</td><td>242</td></tr>
+                                <tr><td>8</td><td>0,001</td><td>12,841</td><td>584</td><td>7,19</td><td>284</td></tr>
+                                <tr><td>9</td><td>0,001</td><td>12,945</td><td>583</td><td>10,143</td><td>272</td></tr>
+                                <tr><td>10</td><td>0,001</td><td>12,511</td><td>583</td><td>9,041</td><td>287</td></tr>
+                                <tr><td>11</td><td>0,001</td><td>12,913</td><td>583</td><td>8,353</td><td>272</td></tr>
+                                <tr><td>12</td><td>0,001</td><td>11,205</td><td>583</td><td>9,452</td><td>265</td></tr>
+                                <tr><td>⋮</td><td>⋮</td><td>⋮</td><td>⋮</td><td>⋮</td><td>⋮</td></tr>
+                                <tr><td>50</td><td>0,001</td><td>6,811</td><td>583</td><td>4,288</td><td>253</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div style="display: flex; flex-direction: column; align-items: center; gap: 12px; padding-top: 48px;">
+                        <img src="image/qr-data.png" alt="QR Code Data Pengukuran" style="width: 250px; height: 250px;">
+                        <span style="font-size: 20px; text-align: center;"><a href="https://its.id/m/DataUAPKelompok2" target="_blank">its.id/m/DataUAPKelompok2</a></span>
+                    </div>
+
+                </div>
+            </div>
+            <div class="footer"><img src="Footer.png" alt="Footer Media Sosial"></div>
+        </div>
+
+        <!-- Slide 6b: Analisis Perhitungan (Stokes) -->
+        <div class="slide animate-scale" id="slide6b" style="--graha-opacity: 0.12">
+            <div class="header">
+                <img src="Logo Header.png" alt="Logo ITS" class="logo-header">
+            </div>
+            <div class="content">
+                <h2>Hasil Perhitungan</h2>
+                <p>Contoh persamaan dan perhitungan (tanpa koreksi):</p>
+
+                <div class="grid-daftar-isi">
+                    <div class="bab-box">
+                        <p style="font-size:0.9em;color:#003366;">Kecepatan Terminal
+                        <br>\(v_d=\frac{d}{t_d}=\frac{1,00\times10^{-3}}{6,379}=1,568\times10^{-4}\;m/s\)
+                        <br>\(v_u=\frac{d}{t_u}=\frac{1,00\times10^{-3}}{10,06}=9,940\times10^{-5}\;m/s\)
+                            <br>
+                        <br>Jari-jari Tetesan (Stokes)
+                        <br>\(r=\sqrt{\frac{9\eta v_d}{2g(\rho_o-\rho_f)}}\)
+                        <br>\(r=\sqrt{\frac{9(1,85\times10^{-5})(1,568\times10^{-4})}{2(9,81)(875-1,29)}}\)
+                        <br>\(r=1,234\times10^{-6}\;m\)
+                        </p>
+                    </div>
+                    
+                    <div class="bab-box">
+                        <p style="font-size:0.9em;color:#003366;"> Muatan Metode <i>Floating</i> dan <i>Rising</i>
+                            <br>\(q_f=\frac{18\pi\eta lv_d}{U_s}\sqrt{\frac{\eta v_d}{2g(\rho_o-\rho_f)}}\)
+                            <br>\(q_f=\frac{18\pi(1,85\times10^{-5})(6,00\times10^{-3})(1,568\times10^{-4})}{262}\sqrt{\frac{(1,85\times10^{-5})(1,568\times10^{-4})}{2(9,81)(873,71)}}\)
+                            <br>\(q_f=1,545\times10^{-18}\;C\)
+                        </p>
+                        <p style="font-size:0.9em;color:#003366;">
+                            <br>\(q_r=\frac{18\pi\eta l(v_d+v_u)}{U_r}\sqrt{\frac{\eta v_d}{2g(\rho_o-\rho_f)}}\)
+                            <br>\(q_r=\frac{18\pi(1,85\times10^{-5})(6,00\times10^{-3})(2,562\times10^{-4})}{589}\sqrt{\frac{(1,85\times10^{-5})(1,568\times10^{-4})}{2(9,81)(873,71)}}\)
+                            <br>\(q_r=1,123\times10^{-18}\;C\)
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer"><img src="Footer.png" alt="Footer Media Sosial"></div>
+        </div>
+
+        <!-- Slide 6b: Analisis Perhitungan (koreksi Cunningham) -->
+        <div class="slide animate-scale" id="slide6b" style="--graha-opacity: 0.12">
+            <div class="header">
+                <img src="Logo Header.png" alt="Logo ITS" class="logo-header">
+            </div>
+            <div class="content">
+                <p>Persamaan dan perhitungan (koreksi Cunningham):</p>
+
+                <div class="grid-daftar-isi">
+                    <div class="bab-box">
+                        <p style="font-size:0.9em;color:#003366;">
+                        \(b(T)=8,2\times10^{-3}\left(\frac{298,15}{296}\right)=8,260\times10^{-3}\)
+                        <br>\(\frac{b}{p}=\frac{8,260\times10^{-3}}{101325}=8,152\times10^{-8}\;m\)<br>
+                        <br>Jari-jari Terkoreksi
+                        <br>\(r_c=\frac{1}{2}\left[-\frac{b}{p}+\sqrt{\left(\frac{b}{p}\right)^2+4r^2}\right]\)
+                        <br>\(r_c=1,194\times10^{-6}\;m\)<br>
+                        <br>Faktor Koreksi
+                        <br>\(C_c=1+\frac{b}{pr_c}=1,068\)
+                        </p>
+                    </div>
+                    
+                    <div class="bab-box">
+                        <p style="font-size:0.9em;color:#003366;">Muatan Terkoreksi
+                            <br>\(q_{f,c}=\frac{6\pi\eta lv_d}{U_sC_c}r_c\)
+                                    <br>=\(1,399\times10^{-18}\;C\)<br>
+                            <br>\(q_{r,c}=\frac{6\pi\eta l(v_d+v_u)}{U_rC_c}r_c\)
+                                    <br>=\(1,017\times10^{-18}\;C\)
+                        </br>
+                    </div>
+                </div>
+            </div>
+            <div class="footer"><img src="Footer.png" alt="Footer Media Sosial"></div>
+        </div>
+
+        <!-- Slide 6a: Tabel Perhitungan (Stokes) -->
+        <div class="slide animate-fade" id="slide6a" style="--graha-opacity: 0.12">
+            <div class="header">
+                <img src="Logo Header.png" alt="Logo ITS" class="logo-header">
+            </div>
+            <div class="content">
+                <div class="table-title" style="font-family: 'Times New Roman', serif;">
+                    <div>Tabel 2.</div>
+                    <div>Hasil Perhitungan Muatan dan Bilangan Kuantisasi (n) Tanpa Koreksi (Pendekatan Stokes) dalam 10<sup>-19</sup> C</div>
+                </div>
+                
+                <div class="table-wrapper">
+
+                    <table class="scientific-table">
+                        <thead>
+                            <tr>
+                                <th>No</th>
+                                <th>q<sub>r</sub></th>
+                                <th>q<sub>f</sub></th>
+                                <th>q<sub>avg</sub></th>
+                                <th>n</th>
+                                <th>e<sub>est</sub></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>1</td><td>11.229</td><td>15.448</td><td>13.338</td><td>8</td><td>1.667</td></tr>
+                            <tr><td>2</td><td>6.324</td><td>4.547</td><td>5.435</td><td>3</td><td>1.812</td></tr>
+                            <tr><td>3</td><td>17.366</td><td>26.754</td><td>22.060</td><td>13</td><td>1.697</td></tr>
+                            <tr><td>4</td><td>10.474</td><td>10.070</td><td>10.272</td><td>6</td><td>1.712</td></tr>
+                            <tr><td>5</td><td>6.368</td><td>17.311</td><td>11.839</td><td>7</td><td>1.691</td></tr>
+                            <tr><td>6</td><td>6.845</td><td>6.083</td><td>6.464</td><td>4</td><td>1.616</td></tr>
+                            <tr><td>7</td><td>6.048</td><td>7.949</td><td>6.999</td><td>4</td><td>1.750</td></tr>
+                            <tr><td>8</td><td>6.760</td><td>4.990</td><td>5.875</td><td>3</td><td>1.958</td></tr>
+                            <tr><td>9</td><td>5.466</td><td>5.147</td><td>5.307</td><td>3</td><td>1.769</td></tr>
+                            <tr><td>10</td><td>6.025</td><td>5.134</td><td>5.580</td><td>3</td><td>1.860</td></tr>
+                            <tr><td>11</td><td>6.137</td><td>5.166</td><td>5.652</td><td>3</td><td>1.884</td></tr>
+                            <tr><td>12</td><td>6.199</td><td>5.773</td><td>5.986</td><td>3</td><td>1.995</td></tr>
+                            <tr><td>13</td><td>13.820</td><td>15.605</td><td>14.713</td><td>8</td><td>1.839</td></tr>
+                            <tr><td>14</td><td>10.948</td><td>9.351</td><td>10.150</td><td>6</td><td>1.692</td></tr>
+                            <tr><td>15</td><td>7.553</td><td>7.786</td><td>7.669</td><td>4</td><td>1.917</td></tr>
+                            <tr><td>16</td><td>6.207</td><td>7.539</td><td>6.873</td><td>4</td><td>1.718</td></tr>
+                            <tr><td>17</td><td>10.256</td><td>10.118</td><td>10.187</td><td>6</td><td>1.698</td></tr>
+                            <tr><td>18</td><td>5.850</td><td>5.102</td><td>5.476</td><td>3</td><td>1.825</td></tr>
+                            <tr><td>19</td><td>6.871</td><td>7.747</td><td>7.309</td><td>4</td><td>1.827</td></tr>
+                            <tr><td>20</td><td>6.421</td><td>7.753</td><td>7.087</td><td>4</td><td>1.772</td></tr>
+                            <tr><td>21</td><td>7.407</td><td>8.065</td><td>7.736</td><td>4</td><td>1.934</td></tr>
+                            <tr><td>22</td><td>6.182</td><td>5.793</td><td>5.987</td><td>3</td><td>1.996</td></tr>
+                            <tr><td>23</td><td>8.486</td><td>9.495</td><td>8.991</td><td>5</td><td>1.798</td></tr>
+                            <tr><td>24</td><td>5.270</td><td>3.849</td><td>4.560</td><td>3</td><td>1.520</td></tr>
+                            <tr><td>25</td><td>6.575</td><td>5.627</td><td>6.101</td><td>3</td><td>2.034</td></tr>
+                        </tbody>
+                        <!-- Data 1-25 -->
+                    </table>
+
+                    <table class="scientific-table">
+                        <thead>
+                            <tr>
+                                <th>No</th>
+                                <th>q<sub>r</sub></th>
+                                <th>q<sub>f</sub></th>
+                                <th>q<sub>avg</sub></th>
+                                <th>n</th>
+                                <th>e<sub>est</sub></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>26</td><td>6.303</td><td>6.828</td><td>6.566</td><td>4</td><td>1.641</td></tr>
+                            <tr><td>27</td><td>9.873</td><td>9.656</td><td>9.764</td><td>6</td><td>1.627</td></tr>
+                            <tr><td>28</td><td>9.798</td><td>9.620</td><td>9.709</td><td>6</td><td>1.618</td></tr>
+                            <tr><td>29</td><td>10.755</td><td>10.205</td><td>10.480</td><td>6</td><td>1.747</td></tr>
+                            <tr><td>30</td><td>11.831</td><td>13.818</td><td>12.824</td><td>7</td><td>1.832</td></tr>
+                            <tr><td>31</td><td>11.130</td><td>10.114</td><td>10.622</td><td>6</td><td>1.770</td></tr>
+                            <tr><td>32</td><td>11.329</td><td>13.481</td><td>12.405</td><td>7</td><td>1.772</td></tr>
+                            <tr><td>33</td><td>6.828</td><td>7.052</td><td>6.940</td><td>4</td><td>1.735</td></tr>
+                            <tr><td>34</td><td>8.490</td><td>8.277</td><td>8.383</td><td>5</td><td>1.677</td></tr>
+                            <tr><td>35</td><td>5.740</td><td>6.207</td><td>5.973</td><td>3</td><td>1.991</td></tr>
+                            <tr><td>36</td><td>5.577</td><td>4.981</td><td>5.279</td><td>3</td><td>1.760</td></tr>
+                            <tr><td>37</td><td>8.442</td><td>7.268</td><td>7.855</td><td>4</td><td>1.964</td></tr>
+                            <tr><td>38</td><td>7.367</td><td>9.409</td><td>8.388</td><td>5</td><td>1.678</td></tr>
+                            <tr><td>39</td><td>14.981</td><td>23.435</td><td>19.208</td><td>11</td><td>1.746</td></tr>
+                            <tr><td>40</td><td>7.301</td><td>7.678</td><td>7.489</td><td>4</td><td>1.872</td></tr>
+                            <tr><td>41</td><td>16.420</td><td>16.248</td><td>16.334</td><td>9</td><td>1.815</td></tr>
+                            <tr><td>42</td><td>16.873</td><td>16.889</td><td>16.881</td><td>10</td><td>1.688</td></tr>
+                            <tr><td>43</td><td>19.133</td><td>15.617</td><td>17.375</td><td>10</td><td>1.738</td></tr>
+                            <tr><td>44</td><td>7.200</td><td>8.966</td><td>8.083</td><td>5</td><td>1.617</td></tr>
+                            <tr><td>45</td><td>11.457</td><td>13.120</td><td>12.289</td><td>7</td><td>1.756</td></tr>
+                            <tr><td>46</td><td>10.984</td><td>9.177</td><td>10.080</td><td>6</td><td>1.680</td></tr>
+                            <tr><td>47</td><td>17.167</td><td>16.236</td><td>16.702</td><td>10</td><td>1.670</td></tr>
+                            <tr><td>48</td><td>6.440</td><td>8.670</td><td>7.555</td><td>4</td><td>1.889</td></tr>
+                            <tr><td>49</td><td>6.592</td><td>6.642</td><td>6.617</td><td>4</td><td>1.654</td></tr>
+                            <tr><td>50</td><td>16.287</td><td>14.500</td><td>15.393</td><td>9</td><td>1.710</td></tr>
+                        </tbody>
+                        <!-- Data 26-50 -->
+                    </table>
+
+                </div>
+            </div>
+            <div class="footer"><img src="Footer.png" alt="Footer Media Sosial"></div>
+        </div>
+
+        <!-- Slide 6a: Tabel Perhitungan (Cunningham) -->
+        <div class="slide animate-fade" id="slide6a" style="--graha-opacity: 0.12">
+            <div class="header">
+                <img src="Logo Header.png" alt="Logo ITS" class="logo-header">
+            </div>
+            <div class="content">
+                <div class="table-title" style="font-family: 'Times New Roman', serif;">
+                    <div>Tabel 3.</div>
+                    <div>Hasil Perhitungan Muatan dan Bilangan Kuantisasi (n) Terkoreksi (koreksi Cunningham) dalam 10<sup>-19</sup> C</div>
+                </div>
+                
+                <div class="table-wrapper">
+
+                    <table class="scientific-table">
+                        <thead>
+                            <tr>
+                                <th>No</th>
+                                <th>q<sub>r</sub></th>
+                                <th>q<sub>f</sub></th>
+                                <th>q<sub>avg</sub></th>
+                                <th>n</th>
+                                <th>e<sub>est</sub></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>1</td><td>10.170</td><td>13.991</td><td>12.080</td><td>7</td><td>1.726</td></tr>
+                            <tr><td>2</td><td>5.529</td><td>3.975</td><td>4.752</td><td>3</td><td>1.584</td></tr>
+                            <tr><td>3</td><td>15.908</td><td>24.507</td><td>20.207</td><td>12</td><td>1.684</td></tr>
+                            <tr><td>4</td><td>9.405</td><td>9.042</td><td>9.223</td><td>5</td><td>1.845</td></tr>
+                            <tr><td>5</td><td>5.602</td><td>15.229</td><td>10.415</td><td>6</td><td>1.736</td></tr>
+                            <tr><td>6</td><td>5.994</td><td>5.327</td><td>5.661</td><td>3</td><td>1.887</td></tr>
+                            <tr><td>7</td><td>5.327</td><td>7.001</td><td>6.164</td><td>4</td><td>1.541</td></tr>
+                            <tr><td>8</td><td>5.874</td><td>4.336</td><td>5.105</td><td>3</td><td>1.702</td></tr>
+                            <tr><td>9</td><td>4.747</td><td>4.470</td><td>4.608</td><td>3</td><td>1.536</td></tr>
+                            <tr><td>10</td><td>5.245</td><td>4.469</td><td>4.857</td><td>3</td><td>1.619</td></tr>
+                            <tr><td>11</td><td>5.330</td><td>4.487</td><td>4.909</td><td>3</td><td>1.636</td></tr>
+                            <tr><td>12</td><td>5.451</td><td>5.076</td><td>5.264</td><td>3</td><td>1.755</td></tr>
+                            <tr><td>13</td><td>12.616</td><td>14.245</td><td>13.431</td><td>8</td><td>1.679</td></tr>
+                            <tr><td>14</td><td>9.839</td><td>8.404</td><td>9.121</td><td>5</td><td>1.824</td></tr>
+                            <tr><td>15</td><td>6.679</td><td>6.885</td><td>6.782</td><td>4</td><td>1.695</td></tr>
+                            <tr><td>16</td><td>5.483</td><td>6.660</td><td>6.072</td><td>4</td><td>1.518</td></tr>
+                            <tr><td>17</td><td>9.180</td><td>9.057</td><td>9.119</td><td>5</td><td>1.824</td></tr>
+                            <tr><td>18</td><td>5.121</td><td>4.466</td><td>4.794</td><td>3</td><td>1.598</td></tr>
+                            <tr><td>19</td><td>6.082</td><td>6.858</td><td>6.470</td><td>4</td><td>1.617</td></tr>
+                            <tr><td>20</td><td>5.686</td><td>6.865</td><td>6.276</td><td>4</td><td>1.569</td></tr>
+                            <tr><td>21</td><td>6.517</td><td>7.096</td><td>6.806</td><td>4</td><td>1.702</td></tr>
+                            <tr><td>22</td><td>5.414</td><td>5.074</td><td>5.244</td><td>3</td><td>1.748</td></tr>
+                            <tr><td>23</td><td>7.599</td><td>8.503</td><td>8.051</td><td>5</td><td>1.610</td></tr>
+                            <tr><td>24</td><td>4.522</td><td>3.303</td><td>3.913</td><td>2</td><td>1.956</td></tr>
+                            <tr><td>25</td><td>5.742</td><td>4.914</td><td>5.328</td><td>3</td><td>1.776</td></tr>
+                        </tbody>
+                        <!-- Data 1-25 -->
+                    </table>
+
+                    <table class="scientific-table">
+                        <thead>
+                            <tr>
+                                <th>No</th>
+                                <th>q<sub>r</sub></th>
+                                <th>q<sub>f</sub></th>
+                                <th>q<sub>avg</sub></th>
+                                <th>n</th>
+                                <th>e<sub>est</sub></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>26</td><td>5.568</td><td>6.031</td><td>5.800</td><td>3</td><td>1.933</td></tr>
+                            <tr><td>27</td><td>8.828</td><td>8.634</td><td>8.731</td><td>5</td><td>1.746</td></tr>
+                            <tr><td>28</td><td>8.778</td><td>8.619</td><td>8.698</td><td>5</td><td>1.740</td></tr>
+                            <tr><td>29</td><td>9.629</td><td>9.137</td><td>9.383</td><td>5</td><td>1.877</td></tr>
+                            <tr><td>30</td><td>10.700</td><td>12.497</td><td>11.598</td><td>7</td><td>1.657</td></tr>
+                            <tr><td>31</td><td>9.974</td><td>9.063</td><td>9.519</td><td>5</td><td>1.904</td></tr>
+                            <tr><td>32</td><td>10.247</td><td>12.194</td><td>11.221</td><td>6</td><td>1.870</td></tr>
+                            <tr><td>33</td><td>6.026</td><td>6.223</td><td>6.125</td><td>4</td><td>1.531</td></tr>
+                            <tr><td>34</td><td>7.527</td><td>7.339</td><td>7.433</td><td>4</td><td>1.858</td></tr>
+                            <tr><td>35</td><td>5.055</td><td>5.466</td><td>5.261</td><td>3</td><td>1.754</td></tr>
+                            <tr><td>36</td><td>4.864</td><td>4.344</td><td>4.604</td><td>3</td><td>1.535</td></tr>
+                            <tr><td>37</td><td>7.445</td><td>6.410</td><td>6.928</td><td>4</td><td>1.732</td></tr>
+                            <tr><td>38</td><td>6.514</td><td>8.319</td><td>7.417</td><td>4</td><td>1.854</td></tr>
+                            <tr><td>39</td><td>13.748</td><td>21.506</td><td>17.627</td><td>10</td><td>1.763</td></tr>
+                            <tr><td>40</td><td>6.436</td><td>6.768</td><td>6.602</td><td>4</td><td>1.651</td></tr>
+                            <tr><td>41</td><td>14.954</td><td>14.797</td><td>14.875</td><td>9</td><td>1.653</td></tr>
+                            <tr><td>42</td><td>15.402</td><td>15.417</td><td>15.409</td><td>9</td><td>1.712</td></tr>
+                            <tr><td>43</td><td>17.289</td><td>14.112</td><td>15.700</td><td>9</td><td>1.744</td></tr>
+                            <tr><td>44</td><td>6.346</td><td>7.903</td><td>7.124</td><td>4</td><td>1.781</td></tr>
+                            <tr><td>45</td><td>10.250</td><td>11.737</td><td>10.993</td><td>6</td><td>1.832</td></tr>
+                            <tr><td>46</td><td>9.823</td><td>8.207</td><td>9.015</td><td>5</td><td>1.803</td></tr>
+                            <tr><td>47</td><td>15.614</td><td>14.766</td><td>15.190</td><td>9</td><td>1.688</td></tr>
+                            <tr><td>48</td><td>5.664</td><td>7.626</td><td>6.645</td><td>4</td><td>1.661</td></tr>
+                            <tr><td>49</td><td>5.796</td><td>5.840</td><td>5.818</td><td>3</td><td>1.939</td></tr>
+                            <tr><td>50</td><td>14.702</td><td>13.089</td><td>13.896</td><td>8</td><td>1.737</td></tr>
+                        </tbody>
+                        <!-- Data 26-50 -->
+                    </table>
+
+                </div>
+            </div>
+            <div class="footer"><img src="Footer.png" alt="Footer Media Sosial"></div>
+        </div>
+
+        <!-- Slide 6a: Tabel Matriks Segitiga Bawah -->
+        <div class="slide animate-fade" id="slide6a" style="--graha-opacity: 0.12">
+            <div class="header">
+                <img src="Logo Header.png" alt="Logo ITS" class="logo-header">
+            </div>
+            <div style="display:flex; gap:40px; justify-content:center;">
+
+                <!-- Tabel cuplikan stokes -->
+                <div>
+                    <div class="table-title" style="font-family: 'Times New Roman', serif;text-align:center;font-size: 0.8em;">
+                        <div>Tabel 4.</div>
+                        <div>Matriks Segitiga Cuplikan Selisih Muatan (|q<sub>i</sub>−q<sub>j</sub>|) Tanpa Koreksi dalam 10<sup>-19</sup> C</div>
+                    </div>
+                    <table class="scientific-table" style="font-size: 0.8em;">
+                        <thead>
+                            <tr>
+                            <th>q<sub>i</sub> \ q<sub>j</sub></th>
+                            <th>13,338</th>
+                            <th>5,435</th>
+                            <th>22,060</th>
+                            <th>10,272</th>
+                            <th>11,839</th>
+                            <th>6,464</th>
+                            <th>6,999</th>
+                            <th>5,875</th>
+                            <th>5,307</th>
+                            <th>5,580</th>
+                            <th>5,652</th>
+                            <th>…</th>
+                            <th>q<sub>50</sub></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td><b>13,338</b></td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>…</td><td>2,055</td></tr>
+                            <tr><td><b>5,435</b></td><td>7,903</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>…</td><td>9,958</td></tr>
+                            <tr><td><b>22,060</b></td><td>8,722</td><td>16,625</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>…</td><td>6,667</td></tr>
+                            <tr><td><b>10,272</b></td><td>3,066</td><td>4,837</td><td>11,788</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>…</td><td>5,121</td></tr>
+                            <tr><td><b>11,839</b></td><td>1,499</td><td>6,404</td><td>10,221</td><td>1,567</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>…</td><td>3,554</td></tr>
+                            <tr><td><b>6,464</b></td><td>6,874</td><td>1,029</td><td>15,596</td><td>3,808</td><td>5,375</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>…</td><td>8,929</td></tr>
+                            <tr><td><b>6,999</b></td><td>6,340</td><td>1,563</td><td>15,061</td><td>3,273</td><td>4,841</td><td>0,535</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>…</td><td>8,395</td></tr>
+                            <tr><td><b>5,875</b></td><td>7,463</td><td>0,440</td><td>16,185</td><td>4,397</td><td>5,964</td><td>0,589</td><td>1,124</td><td>-</td><td>-</td><td>-</td><td>-</td><td>…</td><td>9,518</td></tr>
+                            <tr><td><b>5,307</b></td><td>8,031</td><td>0,128</td><td>16,753</td><td>4,965</td><td>6,532</td><td>1,157</td><td>1,692</td><td>0,568</td><td>-</td><td>-</td><td>-</td><td>…</td><td>10,087</td></tr>
+                            <tr><td><b>5,580</b></td><td>7,759</td><td>0,145</td><td>16,480</td><td>4,692</td><td>6,260</td><td>0,884</td><td>1,419</td><td>0,295</td><td>0.273</td><td>-</td><td>-</td><td>…</td><td>9,814</td></tr>
+                            <tr><td><b>5,652</b></td><td>7,687</td><td>0.216</td><td>16.408</td><td>4.620</td><td>6.188</td><td>0.812</td><td>1.347</td><td>0.223</td><td>0.345</td><td>0.072</td><td>-</td><td>…</td><td>9,742</td></tr>
+                            <tr><td>⋮</td><td>⋮</td><td>⋮</td><td>⋮</td><td>⋮</td><td>⋮</td><td>⋮</td><td>⋮</td><td>⋮</td><td>⋮</td><td>⋮</td><td>⋮</td><td>⋱</td><td>⋮</td></tr>
+                            <tr><td>q<sub>50</sub></td><td>2,055</td><td>9,958</td><td>6,667</td><td>5,121</td><td>3,554</td><td>8,929</td><td>8,395</td><td>9,518</td><td>10,087</td><td>9,814</td><td>9,742</td><td>…</td><td>0</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Tabel cuplikan cunningham  -->
+                <div>
+                    <div class="table-title" style="font-family: 'Times New Roman', serif;text-align:center;font-size: 0.8em;">
+                        <div>Tabel 5.</div>
+                        <div>Matriks Segitiga Cuplikan Selisih Muatan (|q<sub>i</sub>−q<sub>j</sub>|) koreksi Cunningham dalam 10<sup>-19</sup> C</div>
+                    </div>
+
+                    <table class="scientific-table" style="font-size: 0.8em;">
+                        <thead>
+                            <tr>
+                            <th>q<sub>i</sub> \ q<sub>j</sub></th>
+                            <th>12,080</th>
+                            <th>4,752</th>
+                            <th>20,207</th>
+                            <th>9,223</th>
+                            <th>10,415</th>
+                            <th>5,661</th>
+                            <th>6,164</th>
+                            <th>5,105</th>
+                            <th>4,608</th>
+                            <th>4,857</th>
+                            <th>4,909</th>
+                            <th>…</th>
+                            <th>q<sub>50</sub></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td><b>12,080</b></td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>…</td><td>1,816</td></tr>
+                            <tr><td><b>4,752</b></td><td>7,328</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>…</td><td>9,144</td></tr>
+                            <tr><td><b>20,207</b></td><td>8,127</td><td>15,456</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>…</td><td>6,311</td></tr>
+                            <tr><td><b>9,223</b></td><td>2,857</td><td>4,472</td><td>10,984</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>…</td><td>4,673</td></tr>
+                            <tr><td><b>10,415</b></td><td>1,665</td><td>5,663</td><td>9,792</td><td>1,192</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>…</td><td>3,481</td></tr>
+                            <tr><td><b>5,661</b></td><td>6,419</td><td>0,909</td><td>14,547</td><td>3,563</td><td>4,754</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>…</td><td>8,235</td></tr>
+                            <tr><td><b>6,164</b></td><td>5,916</td><td>1,412</td><td>14,043</td><td>3,059</td><td>4,251</td><td>0,503</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>…</td><td>7,732</td></tr>
+                            <tr><td><b>5,105</b></td><td>6,975</td><td>0,353</td><td>15,103</td><td>4,119</td><td>5,311</td><td>0,556</td><td>1,060</td><td>-</td><td>-</td><td>-</td><td>-</td><td>…</td><td>8,791</td></tr>
+                            <tr><td><b>4,608</b></td><td>7,472</td><td>0,143</td><td>15,599</td><td>4,615</td><td>5,807</td><td>1,052</td><td>1,556</td><td>0,496</td><td>-</td><td>-</td><td>-</td><td>…</td><td>9,287</td></tr>
+                            <tr><td><b>4,857</b></td><td>7,223</td><td>0,105</td><td>15,351</td><td>4,366</td><td>5,558</td><td>0,804</td><td>1,307</td><td>0,248</td><td>0,249</td><td>-</td><td>-</td><td>…</td><td>9,039</td></tr>
+                            <tr><td><b>4,909</b></td><td>7,172</td><td>0,157</td><td>15,299</td><td>4,315</td><td>5,507</td><td>0,752</td><td>1,256</td><td>0,196</td><td>0,300</td><td>0,052</td><td>-</td><td>…</td><td>8,987</td></tr>
+                            <tr><td>⋮</td><td>⋮</td><td>⋮</td><td>⋮</td><td>⋮</td><td>⋮</td><td>⋮</td><td>⋮</td><td>⋮</td><td>⋮</td><td>⋮</td><td>⋮</td><td>⋱</td><td>⋮</td></tr>
+                            <tr><td>q<sub>50</sub></td><td>1,815</td><td>9,144</td><td>6,312</td><td>4,672</td><td>3,480</td><td>8,235</td><td>7,731</td><td>8,791</td><td>9,287</td><td>9,039</td><td>8,987</td><td>…</td><td>0</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>         
+            <div class="footer"><img src="Footer.png" alt="Footer Media Sosial"></div>
+        </div>
+
+        <div class="slide animate-fade" id="slide6a" style="--graha-opacity: 0.12">
+            <div class="header">
+                <img src="Logo Header.png" alt="Logo ITS" class="logo-header">
+            </div>
+            <div class="content">
+                <div style="display: flex; flex-direction: column; align-items: center;">
+                    <img src="image/qr-olah-data.png" alt="QR Code Data Pengukuran" style="width: 400px; height: 400px;">
+                    <span style="font-size: 20px; text-align: center;"><a href="https://its.id/m/MilikanCunninghamKel2" target="_blank">its.id/m/MilikanCunninghamKel2</a></span>
+                </div>
+            </div>
+            <div class="footer"><img src="Footer.png" alt="Footer Media Sosial"></div>
+        </div>
+
+        <!-- Slide 6a: Histogram -->
+        <div class="slide animate-fade" id="slide6a" style="--graha-opacity: 0.12">
+            <div class="header">
+                <img src="Logo Header.png" alt="Logo ITS" class="logo-header">
+            </div>
+            <div class="content">
+                <p style="text-align:center;margin: 0px;"><img src="image/histogram.png" alt="Histogram Data Perhitungan" style="max-width:90%;height:auto;border:2px solid rgba(0,0,0,0.06);"></p>
+                <p style="font-size:15px;font-family:'Times New Roman', Times, serif;color:#003366;margin:0px;">Histogram distribusi selisih muatan pada data tanpa koreksi, dan data dengan koreksi Cunningham.</p>
+            </div>
+            <div class="footer"><img src="Footer.png" alt="Footer Media Sosial"></div>
+        </div>
+
+        <!-- Slide 6c: Grafik Regresi Linear -->
+        <div class="slide animate-rotate" id="slide6c" style="--graha-opacity: 0.14">
+            <div class="header">
+                <img src="Logo Header.png" alt="Logo ITS" class="logo-header">
+            </div>
+            <div class="content">
+                <h2>Grafik</h2>
+                <p style="text-align: center;margin:0px;"><img src="image/regresi-linear.png" alt="Grafik" style="max-width:80%;height:auto;border:2px solid rgba(0,0,0,0.06);"></p>
+                <p style="font-size:15px;font-family:'Times New Roman', Times, serif;color:#003366;margin:0px;">Grafik regresi linear antara muatan tetesan (q<sub>avg</sub>) terhadap bilangan bulat kuantisasi (n) pada data tanpa koreksi, dan data dengan koreksi Cunningham.</p>
+            </div>
+            <div class="footer"><img src="Footer.png" alt="Footer Media Sosial"></div>
+        </div>
+
+        <div class="slide animate-fade" id="slide6d" style="--graha-opacity: 0.10">
+            <div class="header">
+                <img src="Logo Header.png" alt="Logo ITS" class="logo-header">
+            </div>
+            <div class="content">
+                <h2>Pembahasan</h2>
+                <ul>
+                    <li>Hasil menunjukkan kecenderungan linier antara A dan B pada rentang yang diuji.</li>
+                    <li>Ketidakpastian pengukuran kemungkinan disebabkan oleh ketidakkonsistenan alat.</li>
+                    <li>Perbedaan kecil dengan model teoritis dapat dijelaskan oleh asumsi ideal pada model.</li>
+                </ul>
+            </div>
+            <div class="footer"><img src="Footer.png" alt="Footer Media Sosial"></div>
+        </div>
+
+        <div class="slide animate-scale" id="slide7" style="--graha-opacity: 0.22">
+            <div class="header">
+                <img src="Logo Header.png" alt="Logo ITS" class="logo-header">
+            </div>
+            <div class="content">
+                <h1>BAB V</h1>
+                <h2>PEMBAHASAN</h2>
+                <p>Pembahasan lanjutan, sumber kesalahan, dan interpretasi hasil.</p>
+            </div>
+            <div class="footer">
+                <img src="Footer.png" alt="Footer Media Sosial">
+            </div>
+        </div>
+
+        <div class="slide animate-fade" id="slide7a" style="--graha-opacity: 0.2">
+            <div class="header">
+                <img src="Logo Header.png" alt="Logo ITS" class="logo-header">
+            </div>
+            <div class="content">
+                <h2>Kesimpulan dan Saran</h2>
+                <ul>
+                    <li>Kesimpulan utama: Hubungan linier antara A dan B terkonfirmasi dalam rentang pengukuran.</li>
+                    <li>Saran: Perbaiki kalibrasi alat untuk mengurangi ketidakpastian.</li>
+                    <li>Saran lanjutan: Perlu percobaan tambahan pada rentang yang lebih luas.</li>
+                </ul>
+            </div>
+            <div class="footer"><img src="Footer.png" alt="Footer Media Sosial"></div>
+        </div>
+
+        <div class="slide animate-fade" id="slide8" style="--graha-opacity: 0.28">
+            <div class="header">
+                <img src="Logo Header.png" alt="Logo ITS">
+            </div>
+            <div class="content">
+                <h1>BAB VI</h1>
+                <h2>KESIMPULAN</h2>
+                <p>Ringkasan temuan utama, kesimpulan, dan saran untuk tindak lanjut.</p>
+            </div>
+            <div class="footer">
+                <img src="Footer.png" alt="Footer Media Sosial">
+            </div>
+        </div>
+
+        <div class="slide animate-fade" id="slide9" style="--graha-opacity: 0.3">
+            <div class="header"><img src="Logo Header.png" alt="Logo ITS"></div>
+            <div class="content">
+                <h2>Daftar Pustaka</h2>
+                <ol>
+                    <li>Author A., "Judul Buku Teori", Penerbit, Tahun.</li>
+                    <li>Author B., "Artikel tentang variabel A dan B", Jurnal X, Vol. 10, 20XX.</li>
+                    <li>Author C., "Metodologi pengukuran", Konferensi Y, 20XX.</li>
+                </ol>
+            </div>
+            <div class="footer"><img src="Footer.png" alt="Footer Media Sosial"></div>
+        </div>
+
+    </div>
+
+    <script src="scripts.js"></script>
+
+</body>
+</html>
