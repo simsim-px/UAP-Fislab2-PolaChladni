@@ -187,7 +187,6 @@ body {
 }
 
 .bab-box p {
-    font-size: 1em !important;
     margin: 0 !important;
     color: #333;
     line-height: 1.4;
@@ -230,26 +229,15 @@ body {
     font-weight:normal;
 }
 
-.scientific-table thead{
-    border-top:4px double #000;
-}
-
-.scientific-table thead tr:last-child{
-    border-bottom:1.5px solid #000;
-}
-
-.scientific-table tbody tr:last-child{
-    border-bottom:4px double #000;
-}
-
 .scientific-table th,
 .scientific-table td{
-    border:none;
-    padding:2px 6px;
+    border: 0.5px solid gray;
+    padding: 2px 6px;
 }
 
 .scientific-table th{
     font-weight:bold;
+    background-color:#f0f0f0;
 }
 
 .footer img {
