@@ -168,8 +168,8 @@ body {
 .grid-daftar-pustaka {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 25px;
-    max-width: 90%;
+    gap: 35px;
+    max-width: 100%;
 }
 
 .bab-box {
